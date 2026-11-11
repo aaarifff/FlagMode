@@ -7,6 +7,7 @@ import { BattlePhysicsEngine } from '@/lib/engine';
 import { audio } from '@/lib/audio';
 
 import { Header } from '@/components/Header';
+import { FullscreenButton } from '@/components/FullscreenButton';
 import { Leaderboard } from '@/components/Leaderboard';
 import { ArenaCanvas } from '@/components/ArenaCanvas';
 import { ProgressBar } from '@/components/ProgressBar';
@@ -294,6 +295,7 @@ export default function BattlePage() {
         >
           🖥️ Studio Desk
         </button>
+        <FullscreenButton />
       </div>
 
       {/* ───── MOBILE 9:16 VIEW ───── */}

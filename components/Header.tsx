@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { Menu, Volume2, VolumeX, Music } from 'lucide-react';
+import { FullscreenButton } from '@/components/FullscreenButton';
 
 interface HeaderProps {
   title?: string;
@@ -52,7 +53,8 @@ export function Header({
           {title}
         </h1>
 
-        <div className="flex items-center gap-1.5">
+        <div className="flex shrink-0 items-center gap-1.5">
+          <FullscreenButton iconOnly />
           {/* Music Button */}
           <button
             onClick={onToggleMusic}
@@ -107,4 +109,3 @@ export function Header({
     </header>
   );
 }
-
