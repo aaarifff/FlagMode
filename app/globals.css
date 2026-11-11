@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-primary: #050814;
+  --neon-blue: #38bdf8;
+  --neon-purple: #a855f7;
+  --neon-gold: #f59e0b;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: #f8fafc;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  overflow-x: hidden;
+  user-select: none;
+}
+
+/* Neon Glows */
+.glow-card {
+  background: rgba(10, 18, 42, 0.85);
+  border: 1px solid rgba(59, 130, 246, 0.45);
+  box-shadow: 0 0 20px rgba(37, 99, 235, 0.25), inset 0 0 15px rgba(37, 99, 235, 0.15);
+  backdrop-filter: blur(8px);
+}
+
+.glow-pill-blue {
+  background: rgba(30, 58, 138, 0.6);
+  border: 1px solid rgba(96, 165, 250, 0.6);
+  box-shadow: 0 0 10px rgba(59, 130, 246, 0.35);
+}
+
+.glow-pill-amber {
+  background: rgba(146, 64, 14, 0.6);
+  border: 1px solid rgba(251, 191, 36, 0.7);
+  box-shadow: 0 0 10px rgba(245, 158, 11, 0.4);
+}
+
+.glow-pill-green {
+  background: rgba(6, 78, 59, 0.6);
+  border: 1px solid rgba(52, 211, 153, 0.7);
+  box-shadow: 0 0 10px rgba(16, 185, 129, 0.4);
+}
+
+.glow-gold-box {
+  border: 2px solid #fbbf24;
+  box-shadow: 0 0 30px rgba(251, 191, 36, 0.6), inset 0 0 15px rgba(251, 191, 36, 0.4);
+}
+
+/* Sun-ray burst rotation behind winner flag */
+@keyframes spinRays {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.sun-rays {
+  animation: spinRays 14s linear infinite;
+  background: repeating-conic-gradient(
+    from 0deg,
+    rgba(251, 191, 36, 0.22) 0deg 15deg,
+    transparent 15deg 30deg
+  );
+  border-radius: 9999px;
+}
+
